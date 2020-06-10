@@ -60,7 +60,7 @@
   border-radius: 4px;
   font-weight: bold;
   color: $white-color;
-  background: $secondary-color;
+  background: $primary-color;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -76,11 +76,11 @@
   }
 
   &:hover {
-    color: $secondary-color;
+    color: $primary-color;
     background: $white-color;
 
     .button-icon {
-      filter: $filter-secondary-color;
+      filter: $filter-primary-color;
     }
   }
 }

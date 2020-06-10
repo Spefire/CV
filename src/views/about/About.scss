@@ -1,7 +1,7 @@
 @import "@/styles/variables.scss";
 
 .about-section {
-  background: $tertiary-color;
+  background: $secondary-color;
 
   @include mobile-only {
     .section-left-layout {
@@ -27,7 +27,7 @@
   }
 
   .about-text {
-    color: $secondary-color;
+    color: $primary-color;
 
     @include mobile-only {
       text-align: center;
