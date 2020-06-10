@@ -1,4 +1,4 @@
-# Template CV Website
+# CV Website
 
 ## Project setup
 ```
