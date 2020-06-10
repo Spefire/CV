@@ -6,4 +6,31 @@
   @include tablet-only {
     padding: 0 5% 35px 5%;
   }
+
+  ul {
+    @include mobile-only {
+      margin-top: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      list-style-type: none;
+
+      &:nth-child(even) {
+        margin-left: 4%;
+      }
+
+      @include mobile-only {
+        text-align: center;
+      }
+    }
+
+    li:before {
+      content: "• "; /* on affiche une chaîne de caractère */
+
+      @include mobile-only {
+        content: "";
+      }
+    }
+  }
 }

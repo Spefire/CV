@@ -13,10 +13,13 @@
           <p class="contact-text">{{ contactPhone }}</p>
         </div>
         <div>
-          <h4>Courriel</h4>
-          <p class="contact-text">{{ contactMail }}</p>
-          <a class="link-button" v-bind:href="'mailto:' + contactMail">
-            <span class="icon button-icon icon-envelop"></span>M'envoyer un mail
+          <h4>Courriel principal</h4>
+          <a v-bind:href="'mailto:' + contactMail">
+            <p class="contact-text">{{ contactMail }}</p>
+          </a>
+          <h4>Courriel pour les illustrations</h4>
+          <a v-bind:href="'mailto:' + contactMailIllus">
+            <p class="contact-text">{{ contactMailIllus }}</p>
           </a>
         </div>
       </div>

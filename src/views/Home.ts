@@ -24,9 +24,9 @@ export default {
   },
   data() {
     return {
-      name: "Cécile BLIN",
+      name: "Nicholas BRUN",
       description:
-        "Je travaille dans le domaine du <b>Marketing et du Social media</b>.<br/>Faisons défiler la page pour en apprendre plus sur moi.",
+        "Je travaille principalement en tant qu'<b>ingénieur en développement front-end</b>, et en tant qu'<b>illustrateur</b>.<br/>Ma passion : <b>créer, donner vie à des idées</b>.<br/>Faisons défiler ensemble la page pour en savoir plus...",
     };
   },
 };

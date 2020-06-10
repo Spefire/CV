@@ -15,9 +15,13 @@ export default class Languages extends Vue {
     },
     {
       name: "Anglais",
-      value: 75,
+      value: 65,
     },
   ];
 
-  otherLanguageList = [];
+  otherLanguageList = [
+    "+ Compréhension anglaise (orale et écrite)",
+    "- Expression anglaise (orale)",
+    "TOEIC : 800 points en 2017",
+  ];
 }

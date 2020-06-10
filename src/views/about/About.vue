@@ -9,7 +9,7 @@
       <div class="about-links">
         <a class="link-button" v-bind:href="cvFile" download>
           <span class="icon button-icon icon-folder-upload"></span>Télécharger
-          le CV
+          mon CV
         </a>
         <a class="link-button" v-scroll-to="{ el: '#nav-contact', offset: -50 }">
           <span class="icon button-icon icon-users"></span>Me contacter

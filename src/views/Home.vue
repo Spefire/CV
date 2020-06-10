@@ -5,20 +5,19 @@
       <h1>{{ name }}</h1>
       <p v-html="description"></p>
       <div class="home-links">
-        <!--span class="icon home-icon icon-facebook"></span>
-        <span class="icon home-icon icon-twitter"></span>
-        <span class="icon home-icon icon-instagram"></span>
-        <span class="icon home-icon icon-twitch"></span-->
-        <a
-          href="https://github.com/Tanthiel50?tab=repositories"
-          target="_blank"
-        >
+        <a href="https://www.facebook.com/spefire/" target="_blank">
+          <span class="icon home-icon icon-facebook"></span>
+        </a>
+        <a href="https://twitter.com/Spefire" target="_blank">
+          <span class="icon home-icon icon-twitter"></span>
+        </a>
+        <a href="instagram.com/spefireflies/" target="_blank">
+          <span class="icon home-icon icon-instagram"></span>
+        </a>
+        <a href="https://github.com/Spefire" target="_blank">
           <span class="icon home-icon icon-github"></span>
         </a>
-        <a
-          href="https://www.linkedin.com/in/c%C3%A9cile-blin-8ab25a72/"
-          target="_blank"
-        >
+        <a href="https://www.linkedin.com/in/nicholas-brun-1689a879/" target="_blank">
           <span class="icon home-icon icon-linkedin"></span>
         </a>
       </div>

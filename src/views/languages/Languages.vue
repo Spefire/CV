@@ -12,7 +12,7 @@
           v-bind:value="language.value"
         />
       </div>
-      <ul>
+      <ul class="wrap-container">
         <li
           v-for="(otherLanguage, index) in otherLanguageList"
           v-bind:key="'otherLanguageList' + index"

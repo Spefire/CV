@@ -10,23 +10,23 @@ import HobbieState from "@/components/hobbie-state/HobbieState.vue";
 export default class Hobbies extends Vue {
   hobbieList = [
     {
-      name: "Voyage",
-      icon: "airplane",
+      name: "Illustrations (section à venir)",
+      icon: "images",
     },
     {
-      name: "Cinéma",
+      name: "Séries, beaucoup de séries",
       icon: "video-camera",
     },
     {
-      name: "Littérature",
-      icon: "book",
+      name: "Maître rôliste (section à venir)",
+      icon: "dice",
     },
     {
-      name: "Jeux vidéo",
+      name: "Jeux vidéo (section à venir)",
       icon: "pacman",
     },
     {
-      name: "Exercices physiques",
+      name: "Exercices physiques (Beat-Saber, ça compte)",
       icon: "accessibility",
     },
   ];

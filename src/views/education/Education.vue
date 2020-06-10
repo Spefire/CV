@@ -6,7 +6,7 @@
     <div class="section-right-layout">
       <div v-for="(educ, index) in educList" :key="index">
         <h2>{{ educ.name }}</h2>
-        <h4>{{ educ.place }} • {{ educ.date }}</h4>
+        <h4>{{ educ.place }} • {{ educ.city }} • {{ educ.date }}</h4>
         <p v-html="educ.description"></p>
       </div>
     </div>
