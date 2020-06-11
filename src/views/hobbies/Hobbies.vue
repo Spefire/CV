@@ -1,5 +1,5 @@
 <template>
-  <div id="nav-hobbies" class="section inverted hobbies-section">
+  <div id="nav-hobbies" class="section hobbies-section">
     <div class="section-left-layout">
       <h2 class="section-title">Loisirs</h2>
     </div>

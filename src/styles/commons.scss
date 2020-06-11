@@ -22,7 +22,8 @@
   }
 
   &.inverted {
-    background: $primary-color;
+    color: $white-color;
+    background: $background-inverted;
 
     .section-title {
       border-bottom: 4px solid $white-color;
@@ -58,6 +59,7 @@
   width: fit-content;
   padding: 12px 20px;
   border-radius: 4px;
+  border: 2px solid $white-color;
   font-weight: bold;
   color: $white-color;
   background: $primary-color;

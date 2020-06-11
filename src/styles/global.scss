@@ -20,14 +20,13 @@ h1 {
   font-family: "Origin", "Segoe UI", sans-serif;
 
   @include mobile-only {
-    font-size: 60px;
+    font-size: 50px;
   }
 }
 
 h2 {
   margin: 0;
   font-size: 24px;
-  color: $black-color;
 }
 
 h4 {
