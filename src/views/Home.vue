@@ -3,6 +3,16 @@
     <Header />
     <div id="nav-home" class="home-page">
       <h1>{{ name }}</h1>
+      <vue-typed-js
+        :strings="profile"
+        :contentType="'html'"
+        :typeSpeed="35"
+        :backSpeed="15"
+        :backDelay="2000"
+        :loop="true"
+      >
+        <p class="typing"></p>
+      </vue-typed-js>
       <p v-html="description"></p>
       <div class="home-links">
         <a href="https://www.facebook.com/spefire/" target="_blank">
@@ -17,7 +27,10 @@
         <a href="https://github.com/Spefire" target="_blank">
           <span class="icon home-icon icon-github"></span>
         </a>
-        <a href="https://www.linkedin.com/in/nicholas-brun-1689a879/" target="_blank">
+        <a
+          href="https://www.linkedin.com/in/nicholas-brun-1689a879/"
+          target="_blank"
+        >
           <span class="icon home-icon icon-linkedin"></span>
         </a>
       </div>

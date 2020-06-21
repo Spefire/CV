@@ -1,11 +1,13 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import VueScrollTo from "vue-scrollto";
+import VueTypedJs from "vue-typed-js";
 
 import Home from "@/views/Home.vue";
 import Legacy from "@/views/Legacy.vue";
 
 Vue.use(VueRouter);
+Vue.use(VueTypedJs);
 // VueScrollTo with default options
 Vue.use(VueScrollTo, {
   container: "body",

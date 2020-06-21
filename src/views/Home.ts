@@ -25,8 +25,13 @@ export default {
   data() {
     return {
       name: "Nicholas BRUN",
+      profile: [
+        "Je suis <b>Ingénieur en développement Front-End</b>.",
+        "Je suis <b>Artiste illustrateur</b>.",
+        "Je suis <b>Amateur de Réalités virtuelle et augmentée</b>.",
+      ],
       description:
-        "Je travaille principalement en tant qu'<b>ingénieur en développement front-end</b>, et en tant qu'<b>illustrateur</b>.<br/>Ma passion : <b>créer, donner vie à des idées</b>.<br/>Faisons défiler ensemble la page pour en savoir plus...",
+        "Ma passion : <b>créer, donner vie à des idées</b>.<br/>Faisons défiler ensemble la page pour en savoir plus...",
     };
   },
 };

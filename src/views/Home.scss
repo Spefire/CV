@@ -14,6 +14,10 @@
   background-image: url("../assets/images/background.jpg");
   text-shadow: $black-color 2px 2px 4px;
 
+  .typed-element {
+    height: 72px;
+  }
+
   p {
     margin: 20px 0;
     text-align: center;
