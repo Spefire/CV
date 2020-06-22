@@ -1,5 +1,11 @@
 @import "@/styles/variables.scss";
 
+.nav-separator {
+  height: 30px;
+  width: 2px;
+  background-color: $white-color;
+}
+
 .section {
   display: flex;
   padding: 35px 20%;

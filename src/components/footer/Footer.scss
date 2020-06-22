@@ -7,7 +7,7 @@ footer {
   justify-content: space-evenly;
   height: 120px;
   width: 100%;
-  padding-top: 20px;
+  padding-top: 15px;
   text-align: center;
   color: $white-color;
   background-color: $black-color;
@@ -22,7 +22,42 @@ footer {
     text-decoration: none;
   }
 
-  .footer-legacy {
-    text-decoration: underline;
+  .footer-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .footer-mobile {
+    @include mobile-only {
+      display: none;
+    }
+  }
+
+  .footer-left {
+    width: 50%;
+    margin: 0 2%;
+    text-align: right;
+  }
+
+  .footer-right {
+    width: 50%;
+    margin: 0 2%;
+    font-weight: bold;
+    text-align: left;
+    text-transform: uppercase;
+    color: $white-color;
+    text-decoration: none;
+    cursor: pointer;
+
+    @include mobile-only {
+      text-align: center;
+    }
+
+    &.active,
+    &:hover {
+      color: $primary-color;
+    }
   }
 }
