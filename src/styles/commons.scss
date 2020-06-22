@@ -62,7 +62,7 @@
   border: 2px solid $white-color;
   font-weight: bold;
   color: $white-color;
-  background: $primary-color;
+  background: $secondary-color;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -78,11 +78,11 @@
   }
 
   &:hover {
-    color: $primary-color;
+    color: $secondary-color;
     background: $white-color;
 
     .button-icon {
-      filter: $filter-primary-color;
+      filter: $filter-secondary-color;
     }
   }
 }
