@@ -2,6 +2,7 @@
 
 .about-section {
   background: $background-full;
+  text-shadow: $secondary-color 0px 0px 2px;
 
   @include mobile-only {
     .section-left-layout {

@@ -16,6 +16,14 @@
 
   .typed-element {
     height: 72px;
+
+    p {
+      font-size: 32px;
+
+      @include mobile-only {
+        font-size: 20px;
+      }
+    }
   }
 
   p {

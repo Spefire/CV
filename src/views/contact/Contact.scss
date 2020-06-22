@@ -3,6 +3,7 @@
 .contact-section {
   padding: 35px 20% 50px 20%;
   background: $background-full;
+  text-shadow: $secondary-color 0px 0px 2px;
 
   @include tablet-only {
     padding: 35px 5% 50px 5%;
@@ -17,8 +18,8 @@
   }
 
   .contact-icon {
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     cursor: default;
 
     @include mobile-only {
