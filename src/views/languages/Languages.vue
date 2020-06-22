@@ -16,11 +16,13 @@
         <li
           v-for="(otherLanguage, index) in otherLanguageList"
           v-bind:key="'otherLanguageList' + index"
-        >{{ otherLanguage }}</li>
+        >
+          {{ otherLanguage }}
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script lang="ts" src="./Languages.ts"></script>
-<style scoped lang="scss" src="./Languages.scss"></style>
+<style lang="scss" src="./Languages.scss"></style>

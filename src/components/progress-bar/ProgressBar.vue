@@ -8,10 +8,9 @@
       <h4 v-else-if="100 <= value">{{ progressList[3] }}</h4>
     </div>
     <div class="progress-bar-externe">
-      <div
-        class="progress-bar-interne"
-        v-bind:style="{ width: value + '%' }"
-      ></div>
+      <div class="progress-bar-interne" :style="{ width: initLevel + '%' }">
+        <label>{{ initLevel + "%" }}</label>
+      </div>
     </div>
   </div>
 </template>

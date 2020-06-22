@@ -7,6 +7,18 @@
     padding: 0 5% 35px 5%;
   }
 
+  .section-title {
+    border-bottom: 4px solid $secondary-color;
+  }
+
+  .progress-bar-externe {
+    background-color: lighten($secondary-color, 25%) !important;
+
+    .progress-bar-interne {
+      background-color: $secondary-color;
+    }
+  }
+
   ul {
     @include mobile-only {
       margin-top: 20px;
