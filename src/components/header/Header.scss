@@ -42,6 +42,12 @@ nav {
     }
   }
 
+  .nav-separator {
+    height: 60%;
+    width: 2px;
+    background-color: $white-color;
+  }
+
   .nav-icon {
     display: none;
     justify-content: space-evenly;

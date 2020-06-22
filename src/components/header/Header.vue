@@ -7,32 +7,61 @@
       <div
         v-scroll-to="{ el: '#nav-home', offset: 0 }"
         v-bind:class="{ active: currentLocation === 'nav-home' }"
-      >Accueil</div>
+      >
+        Accueil
+      </div>
+      <div class="nav-separator"></div>
       <div
         v-scroll-to="{ el: '#nav-about', offset: 0 }"
         v-bind:class="{ active: currentLocation == 'nav-about' }"
-      >Présentation</div>
+      >
+        Présentation
+      </div>
       <div
         v-scroll-to="{ el: '#nav-education', offset: -50 }"
         v-bind:class="{ active: currentLocation == 'nav-education' }"
-      >Formations</div>
+      >
+        Formations
+      </div>
       <div
         v-scroll-to="{ el: '#nav-experiences', offset: -50 }"
         v-bind:class="{ active: currentLocation == 'nav-experiences' }"
-      >Expériences</div>
+      >
+        Expériences
+      </div>
       <div
         v-scroll-to="{ el: '#nav-skills', offset: -50 }"
         v-bind:class="{ active: currentLocation == 'nav-skills' }"
-      >Compétences</div>
+      >
+        Compétences
+      </div>
+      <div class="nav-separator"></div>
       <div
         v-scroll-to="{ el: '#nav-contact', offset: -50 }"
         v-bind:class="{ active: currentLocation == 'nav-contact' }"
-      >Contact</div>
-      <span v-scroll-to="{ el: '#nav-home', offset: 0 }" class="icon nav-icon icon-home"></span>
-      <span v-scroll-to="{ el: '#nav-education', offset: -50 }" class="icon nav-icon icon-user-tie"></span>
-      <span v-scroll-to="{ el: '#nav-skills', offset: -50 }" class="icon nav-icon icon-stats-bars"></span>
-      <span v-scroll-to="{ el: '#nav-hobbies', offset: -50 }" class="icon nav-icon icon-book"></span>
-      <span v-scroll-to="{ el: '#nav-contact', offset: -50 }" class="icon nav-icon icon-users"></span>
+      >
+        Contact
+      </div>
+      <span
+        v-scroll-to="{ el: '#nav-home', offset: 0 }"
+        class="icon nav-icon icon-home"
+      ></span>
+      <span
+        v-scroll-to="{ el: '#nav-education', offset: -50 }"
+        class="icon nav-icon icon-user-tie"
+      ></span>
+      <span
+        v-scroll-to="{ el: '#nav-skills', offset: -50 }"
+        class="icon nav-icon icon-stats-bars"
+      ></span>
+      <span
+        v-scroll-to="{ el: '#nav-hobbies', offset: -50 }"
+        class="icon nav-icon icon-book"
+      ></span>
+      <span
+        v-scroll-to="{ el: '#nav-contact', offset: -50 }"
+        class="icon nav-icon icon-users"
+      ></span>
     </nav>
     <nav v-if="isLegacy">
       <router-link to="/">
