@@ -35,7 +35,7 @@
         </a>
       </div>
     </div>
-    <div class="home-button" v-scroll-to="{ el: '#nav-about', offset: 0 }">
+    <div class="nav-page-button" v-scroll-to="{ el: '#nav-about', offset: 0 }">
       <span class="icon home-icon icon-circle-down"></span>
     </div>
     <About />
@@ -45,7 +45,10 @@
     <Languages />
     <Hobbies />
     <Contact />
-    <div class="footer-button" v-scroll-to="{ el: '#nav-home', offset: 0 }">
+    <div
+      class="nav-page-button inverted"
+      v-scroll-to="{ el: '#nav-home', offset: 0 }"
+    >
       <span class="icon home-icon icon-circle-down"></span>
     </div>
     <Footer />

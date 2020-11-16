@@ -1,11 +1,11 @@
 <template>
-  <div id="nav-about" class="section about-section">
+  <div id="nav-about" class="section inverted about-section">
     <div class="section-left-layout">
       <div class="about-profile" />
     </div>
     <div class="section-right-layout">
       <h2>Présentation</h2>
-      <p class="about-text" v-html="aboutText"></p>
+      <p v-html="aboutText"></p>
       <div class="about-links">
         <a class="link-button" v-bind:href="cvFile" download>
           <span class="icon button-icon icon-folder-upload"></span>Télécharger
