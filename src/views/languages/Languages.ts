@@ -11,11 +11,11 @@ export default class Languages extends Vue {
   languageList = [
     {
       name: "Français",
-      value: 100,
+      value: 5,
     },
     {
       name: "Anglais",
-      value: 65,
+      value: 3,
     },
   ];
 

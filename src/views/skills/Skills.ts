@@ -11,43 +11,43 @@ export default class Skills extends Vue {
   skillList = [
     {
       name: "HTML / CSS",
-      value: 85,
+      value: 4,
     },
     {
       name: "ReactJS / Redux",
-      value: 60,
+      value: 3,
     },
     {
       name: "VueJS",
-      value: 50,
+      value: 3,
     },
     {
       name: "Angular 6+",
-      value: 40,
+      value: 2,
     },
     {
       name: "BabylonJS / A-Frame",
-      value: 50,
+      value: 2,
     },
     {
       name: "Unity / C#",
-      value: 60,
+      value: 3,
     },
     {
       name: "3DS Max",
-      value: 40,
+      value: 2,
     },
     {
       name: "GIMP",
-      value: 85,
+      value: 4,
     },
     {
       name: "Clip Studio Paint",
-      value: 60,
+      value: 3,
     },
     {
       name: "Indesign",
-      value: 60,
+      value: 2,
     },
   ];
 
