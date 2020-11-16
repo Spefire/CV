@@ -28,7 +28,6 @@
   &.inverted {
     color: $white-color;
     background: $background-inverted;
-    text-shadow: $secondary-color 0px 0px 2px;
 
     .section-title {
       border-bottom: 4px solid $white-color;
@@ -139,6 +138,22 @@
 
   &:first-child {
     margin-right: 20px;
+  }
+}
+
+.bloc {
+  padding: 15px 20px 15px 20px;
+  color: $black-color;
+  border-radius: 5px;
+  background: $white-color;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  @include mobile-only {
+    text-align: center;
+    flex-direction: column;
   }
 }
 
@@ -295,12 +310,25 @@
 .contact-section {
   padding-bottom: 50px !important;
 
-  .contact-title {
-    margin-top: 0;
+  .contact-links {
+    display: flex;
+
+    @include mobile-only {
+      text-align: center;
+      flex-direction: column;
+    }
+
+    > * {
+      &:nth-child(even) {
+        @include mobile-only {
+          margin-left: 0;
+        }
+      }
+    }
   }
 
-  .contact-text {
-    color: $white-color;
+  .contact-title {
+    margin-top: 0;
   }
 }
 
@@ -314,7 +342,6 @@
   text-align: center;
   color: $white-color;
   background: $background-inverted;
-  text-shadow: $secondary-color 0px 0px 2px;
 
   @include tablet-only {
     padding: 85px 5% 35px 5%;

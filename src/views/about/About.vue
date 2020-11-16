@@ -4,8 +4,8 @@
       <div class="about-profile" />
     </div>
     <div class="section-right-layout">
-      <h2>Présentation</h2>
-      <p v-html="aboutText"></p>
+      <h2 class="section-title">Présentation</h2>
+      <p class="bloc" v-html="aboutText"></p>
       <div class="about-links">
         <a class="link-button" v-bind:href="cvFile" download>
           <span class="icon button-icon icon-folder-upload"></span>Télécharger
