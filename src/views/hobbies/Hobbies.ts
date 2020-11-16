@@ -26,7 +26,7 @@ export default class Hobbies extends Vue {
       icon: "pacman",
     },
     {
-      name: "Exercices physiques (Beat-Saber, ça compte)",
+      name: "Danse modern-jazz (et Beat-Saber, ça compte ?)",
       icon: "accessibility",
     },
   ];

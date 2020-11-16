@@ -4,6 +4,14 @@ import { Component, Vue } from "vue-property-decorator";
 export default class Experiences extends Vue {
   expList = [
     {
+      name: "Front-End : Projet pour le client SoRewards",
+      date: "3 mois",
+      place: "Conserto",
+      city: "Nantes",
+      description:
+        "Conception et développement d'une solution en VueJS, destinée à gérer toutes les cartes cadeaux en une seule application web en responsive.",
+    },
+    {
       name: "Front-End : Projet 'Soprano' avec le client Arpège",
       date: "7 mois",
       place: "Conserto, Arpège",
