@@ -17,4 +17,3 @@
 </template>
 
 <script lang="ts" src="./Hobbies.ts"></script>
-<style scoped lang="scss" src="./Hobbies.scss"></style>

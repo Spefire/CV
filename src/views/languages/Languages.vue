@@ -25,4 +25,3 @@
 </template>
 
 <script lang="ts" src="./Languages.ts"></script>
-<style lang="scss" src="./Languages.scss"></style>

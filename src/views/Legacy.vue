@@ -13,4 +13,3 @@
 </template>
 
 <script lang="ts" src="./Legacy.ts"></script>
-<style lang="scss" src="./Legacy.scss"></style>

@@ -11,7 +11,10 @@
           <span class="icon button-icon icon-folder-upload"></span>Télécharger
           mon CV
         </a>
-        <a class="link-button" v-scroll-to="{ el: '#nav-contact', offset: -50 }">
+        <a
+          class="link-button"
+          v-scroll-to="{ el: '#nav-contact', offset: -50 }"
+        >
           <span class="icon button-icon icon-users"></span>Me contacter
         </a>
       </div>
@@ -20,4 +23,3 @@
 </template>
 
 <script lang="ts" src="./About.ts"></script>
-<style scoped lang="scss" src="./About.scss"></style>

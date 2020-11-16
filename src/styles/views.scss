@@ -1,0 +1,405 @@
+@import "@/styles/variables.scss";
+
+.nav-separator {
+  height: 30px;
+  width: 2px;
+  background-color: $white-color;
+}
+
+.section {
+  display: flex;
+  padding: 35px 20%;
+  background: $white-color;
+
+  @include tablet-only {
+    padding: 35px 5%;
+  }
+
+  @include mobile-only {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-title {
+    height: fit-content;
+    width: fit-content;
+    text-transform: uppercase;
+    border-bottom: 4px solid $primary-color;
+  }
+
+  &.inverted {
+    color: $white-color;
+    background: $background-inverted;
+    text-shadow: $secondary-color 0px 0px 2px;
+
+    .section-title {
+      border-bottom: 4px solid $white-color;
+    }
+  }
+}
+
+.section-left-layout {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+
+  @include mobile-only {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+.section-right-layout {
+  width: calc(75% - 50px);
+  margin-left: 50px;
+
+  @include mobile-only {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 12px 20px;
+  border-radius: 4px;
+  border: 2px solid $white-color;
+  font-weight: bold;
+  color: $white-color;
+  background: $secondary-color;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: none;
+  cursor: pointer;
+
+  .button-icon {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px 0 0;
+
+    @include mobile-only {
+      display: none;
+    }
+  }
+
+  &:hover {
+    color: $secondary-color;
+    background: $white-color;
+
+    .button-icon {
+      filter: $filter-secondary-color;
+    }
+  }
+}
+
+.link-button:first-child {
+  margin-right: 20px;
+}
+
+.wrap-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    flex: 1 0 48%;
+    overflow: hidden;
+
+    &:nth-child(even) {
+      margin-left: 4%;
+    }
+  }
+}
+
+///--------------------------------------------------------------------------------
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 12.5% 15% 15% 15%;
+  color: $white-color;
+  box-shadow: inset 0 0 100px 20px rgba($black-color, 1);
+  background-position: top;
+  background-image: url("../assets/images/background.jpg");
+  text-shadow: rgba($black-color, 0.5) 2px 2px 4px;
+
+  .typed-element {
+    height: 72px;
+
+    p {
+      font-size: 32px;
+
+      @include mobile-only {
+        font-size: 20px;
+      }
+    }
+  }
+
+  p {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 24px;
+
+    @include mobile-only {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+  }
+
+  @include tablet-only {
+    padding: 5%;
+  }
+}
+
+.home-links {
+  width: 50%;
+  padding-top: 20px;
+  text-align: center;
+  border-top: 2px solid rgba($white-color, 0.5);
+
+  @include mobile-only {
+    width: 80%;
+    padding-top: 10px;
+
+    .home-icon {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}
+
+.home-icon {
+  margin: 0 2.5%;
+
+  &:hover {
+    filter: $filter-primary-color;
+  }
+}
+
+.home-button {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  z-index: 1;
+  height: 50px;
+  width: 100%;
+  text-align: center;
+
+  @include mobile-only {
+    bottom: 10px;
+  }
+}
+
+.footer-button {
+  position: relative;
+  bottom: -15px;
+  left: 0;
+  z-index: 1;
+  height: 0;
+  width: 100%;
+  text-align: center;
+  transform: rotate(180deg);
+}
+
+
+.about-section {
+  background: $background-full;
+  text-shadow: $secondary-color 0px 0px 2px;
+
+  @include mobile-only {
+    .section-left-layout {
+      margin-bottom: 0;
+    }
+  }
+
+  h2 {
+    color: $white-color;
+
+    @include mobile-only {
+      display: none;
+    }
+  }
+
+  .about-profile {
+    height: 250px;
+    width: 200px;
+    border: 2px solid $white-color;
+    background-size: auto 100%;
+    background-position: center;
+    background-image: url("../assets/images/profile.png");
+  }
+
+  .about-text {
+    color: $white-color;
+
+    @include mobile-only {
+      text-align: center;
+    }
+  }
+
+  .about-links {
+    display: flex;
+
+    @include mobile-only {
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.contact-section {
+  padding: 35px 20% 50px 20%;
+  background: $background-full;
+  text-shadow: $secondary-color 0px 0px 2px;
+
+  @include tablet-only {
+    padding: 35px 5% 50px 5%;
+  }
+
+  h2 {
+    color: $white-color;
+
+    @include mobile-only {
+      display: none;
+    }
+  }
+
+  .contact-icon {
+    height: 80px;
+    width: 80px;
+    cursor: default;
+
+    @include mobile-only {
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .contact-text {
+    color: $white-color;
+  }
+
+  .contact-links {
+    margin-top: 20px;
+
+    @include mobile-only {
+      margin-top: 0;
+    }
+
+    h4 {
+      margin-top: 0;
+      color: $white-color;
+    }
+  }
+}
+
+.hobbies-section {
+  padding: 0 20% 35px 20%;
+
+  @include tablet-only {
+    padding: 0 5% 35px 5%;
+  }
+}
+
+
+.languages-section {
+  padding: 0 20% 35px 20%;
+
+  @include tablet-only {
+    padding: 0 5% 35px 5%;
+  }
+
+  .section-title {
+    border-bottom: 4px solid $secondary-color;
+  }
+
+  .progress-bar-externe {
+    background-color: lighten($secondary-color, 25%) !important;
+
+    .progress-bar-interne {
+      background-color: $secondary-color !important;
+    }
+  }
+
+  ul {
+    @include mobile-only {
+      margin-top: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      list-style-type: none;
+
+      &:nth-child(even) {
+        margin-left: 4%;
+      }
+
+      @include mobile-only {
+        text-align: center;
+      }
+    }
+
+    li:before {
+      content: "• "; /* on affiche une chaîne de caractère */
+
+      @include mobile-only {
+        content: "";
+      }
+    }
+  }
+}
+
+.skills-section {
+  ul {
+    @include mobile-only {
+      margin-top: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+      list-style-type: none;
+
+      &:nth-child(even) {
+        margin-left: 4%;
+      }
+
+      @include mobile-only {
+        text-align: center;
+      }
+    }
+
+    li:before {
+      content: "• "; /* on affiche une chaîne de caractère */
+
+      @include mobile-only {
+        content: "";
+      }
+    }
+  }
+}
+
+.legacy-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 100px);
+  padding: 85px 15% 35px 15%;
+  text-align: center;
+  color: $white-color;
+  background: $background-inverted;
+  text-shadow: $secondary-color 0px 0px 2px;
+
+  @include tablet-only {
+    padding: 85px 5% 35px 5%;
+  }
+
+  h2 {
+    color: $white-color;
+  }
+}

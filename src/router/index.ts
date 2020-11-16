@@ -8,6 +8,7 @@ import Legacy from "@/views/Legacy.vue";
 
 Vue.use(VueRouter);
 Vue.use(VueTypedJs);
+
 // VueScrollTo with default options
 Vue.use(VueScrollTo, {
   container: "body",

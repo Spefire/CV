@@ -28,4 +28,3 @@
 </template>
 
 <script lang="ts" src="./Contact.ts"></script>
-<style scoped lang="scss" src="./Contact.scss"></style>

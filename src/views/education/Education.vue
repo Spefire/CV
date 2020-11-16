@@ -14,4 +14,3 @@
 </template>
 
 <script lang="ts" src="./Education.ts"></script>
-<style scoped lang="scss" src="./Education.scss"></style>

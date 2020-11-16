@@ -14,4 +14,3 @@
 </template>
 
 <script lang="ts" src="./Experiences.ts"></script>
-<style scoped lang="scss" src="./Experiences.scss"></style>

@@ -16,11 +16,12 @@
         <li
           v-for="(otherSkill, index) in otherSkillList"
           v-bind:key="'otherSkillList' + index"
-        >{{ otherSkill }}</li>
+        >
+          {{ otherSkill }}
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
 <script lang="ts" src="./Skills.ts"></script>
-<style scoped lang="scss" src="./Skills.scss"></style>
