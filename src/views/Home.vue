@@ -21,7 +21,7 @@
         <a href="https://twitter.com/Spefire" target="_blank">
           <span class="icon home-icon icon-twitter"></span>
         </a>
-        <a href="instagram.com/spefireflies/" target="_blank">
+        <a href="https://instagram.com/spefireflies/" target="_blank">
           <span class="icon home-icon icon-instagram"></span>
         </a>
         <a href="https://github.com/Spefire" target="_blank">
