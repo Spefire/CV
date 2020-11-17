@@ -4,6 +4,17 @@
 /// LAYOUTS
 ///--------------------------------------------------------------------------------
 
+.section-title {
+  height: fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  border-bottom: 4px solid $primary-color;
+
+  &.inverted {
+    border-bottom: 4px solid $white-color;
+  }
+}
+
 .section {
   display: flex;
   padding: 35px 20%;
@@ -18,20 +29,9 @@
     align-items: center;
   }
 
-  .section-title {
-    height: fit-content;
-    width: fit-content;
-    text-transform: uppercase;
-    border-bottom: 4px solid $primary-color;
-  }
-
   &.inverted {
     color: $white-color;
     background: $background-inverted;
-
-    .section-title {
-      border-bottom: 4px solid $white-color;
-    }
   }
 }
 

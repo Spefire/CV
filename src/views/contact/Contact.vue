@@ -1,7 +1,7 @@
 <template>
   <div id="nav-contact" class="section inverted contact-section">
     <div class="section-left-layout">
-      <h2 class="section-title">Contact</h2>
+      <h2 class="section-title inverted">Contact</h2>
     </div>
     <div class="section-right-layout">
       <div class="contact-links wrap-container">

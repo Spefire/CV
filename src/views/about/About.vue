@@ -4,7 +4,7 @@
       <div class="about-profile" />
     </div>
     <div class="section-right-layout">
-      <h2 class="section-title">Présentation</h2>
+      <h2 class="section-title inverted">Présentation</h2>
       <p class="bloc" v-html="aboutText"></p>
       <div class="about-links">
         <a class="link-button" v-bind:href="cvFile" download>

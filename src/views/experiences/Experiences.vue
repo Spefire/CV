@@ -1,7 +1,7 @@
 <template>
   <div id="nav-experiences" class="section inverted experiences-section">
     <div class="section-left-layout">
-      <h2 class="section-title">Expériences</h2>
+      <h2 class="section-title inverted">Expériences</h2>
     </div>
     <div class="section-right-layout">
       <div v-for="(exp, index) in expList" :key="index" class="bloc">
