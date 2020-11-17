@@ -33,13 +33,14 @@ footer {
   .footer-left {
     width: 50%;
     margin: 0 2%;
+    font-size: 18px;
     text-align: right;
   }
 
   .footer-right {
     width: 50%;
     margin: 0 2%;
-    font-weight: bold;
+    font-size: 18px;
     text-align: left;
     text-transform: uppercase;
     color: $white-color;
