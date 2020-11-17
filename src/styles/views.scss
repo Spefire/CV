@@ -204,13 +204,16 @@
 }
 
 .home-links {
-  width: 50%;
+  width: 60%;
   padding-top: 20px;
   text-align: center;
   border-top: 2px solid rgba($white-color, 0.5);
 
-  @include mobile-only {
+  @include tablet-only {
     width: 80%;
+  }
+
+  @include mobile-only {
     padding-top: 10px;
 
     .home-icon {
@@ -221,7 +224,7 @@
 }
 
 .home-icon {
-  margin: 0 2.5%;
+  margin: 0 3%;
 
   &:hover {
     filter: $filter-primary-color;
@@ -278,6 +281,7 @@
     }
 
     li:before {
+      font-weight: bold;
       content: "• "; /* on affiche une chaîne de caractère */
 
       @include mobile-only {
