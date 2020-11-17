@@ -6,10 +6,10 @@
     </div>
     <div class="footer-line">
       <div class="footer-left footer-mobile">
-        Site réalisé
-        <a href="https://github.com/Spefire/TemplateCV" target="_blank">
-          <b>par mes soins</b>
-        </a>
+        Site disponible sur mon
+        <a href="https://github.com/Spefire/TemplateCV" target="_blank"
+          ><b>GitHub</b></a
+        >
       </div>
       <div class="nav-separator footer-mobile"></div>
       <router-link class="footer-right" to="mentions-legales"

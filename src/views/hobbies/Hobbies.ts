@@ -10,7 +10,7 @@ import HobbieState from "@/components/hobbie-state/HobbieState.vue";
 export default class Hobbies extends Vue {
   hobbieList = [
     {
-      name: "Illustrations (section à venir)",
+      name: "Illustrations",
       icon: "images",
     },
     {
@@ -18,11 +18,11 @@ export default class Hobbies extends Vue {
       icon: "video-camera",
     },
     {
-      name: "Maître rôliste (section à venir)",
+      name: "Maître rôliste (Le Monde d'Arlénor, L'Appel de Cthulhu, Sens Hexalogie...)",
       icon: "dice",
     },
     {
-      name: "Jeux vidéo (section à venir)",
+      name: "Jeux vidéo (coopératifs, narratifs, horreur...)",
       icon: "pacman",
     },
     {
