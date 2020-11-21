@@ -18,11 +18,11 @@
   display: flex;
   justify-content: space-between;
 
-  h4 {
+  h3 {
     color: $black-color;
   }
 
-  h4:first-child {
+  h3:first-child {
     text-transform: uppercase;
   }
 }

@@ -6,17 +6,17 @@
     <div class="section-right-layout">
       <div class="contact-links wrap-container">
         <div>
-          <h4 class="contact-title">Adresse postale</h4>
+          <h3 class="contact-title">Adresse postale</h3>
           <p class="bloc" v-html="contactAdress"></p>
-          <h4 class="contact-title">Téléphone</h4>
+          <h3 class="contact-title">Téléphone</h3>
           <p class="bloc">{{ contactPhone }}</p>
         </div>
         <div>
-          <h4 class="contact-title">Courriel principal</h4>
+          <h3 class="contact-title">Courriel principal</h3>
           <a v-bind:href="'mailto:' + contactMail">
             <p class="bloc">{{ contactMail }}</p>
           </a>
-          <h4 class="contact-title">Courriel pour les illustrations</h4>
+          <h3 class="contact-title">Courriel pour les illustrations</h3>
           <a v-bind:href="'mailto:' + contactMailIllus">
             <p class="bloc">{{ contactMailIllus }}</p>
           </a>

@@ -1,8 +1,8 @@
 <template>
   <div class="progress-bar">
     <div class="progress-bar-header">
-      <h4>{{ name }}</h4>
-      <h4>{{ progressList[value - 1] }}</h4>
+      <h3>{{ name }}</h3>
+      <h3>{{ progressList[value - 1] }}</h3>
     </div>
     <div class="progress-bar-externe">
       <div

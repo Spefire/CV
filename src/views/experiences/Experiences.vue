@@ -6,7 +6,7 @@
     <div class="section-right-layout">
       <div v-for="(exp, index) in expList" :key="index" class="bloc">
         <h2>{{ exp.name }}</h2>
-        <h4>{{ exp.place }} • {{ exp.city }} • {{ exp.date }}</h4>
+        <h3>{{ exp.place }} • {{ exp.city }} • {{ exp.date }}</h3>
         <p v-html="exp.description"></p>
       </div>
     </div>
