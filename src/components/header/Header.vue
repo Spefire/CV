@@ -48,7 +48,7 @@
       ></span>
       <span
         v-scroll-to="{ el: '#nav-education', offset: -50 }"
-        class="icon nav-icon icon-user-tie"
+        class="icon nav-icon icon-briefcase"
       ></span>
       <span
         v-scroll-to="{ el: '#nav-skills', offset: -50 }"
@@ -56,11 +56,11 @@
       ></span>
       <span
         v-scroll-to="{ el: '#nav-hobbies', offset: -50 }"
-        class="icon nav-icon icon-book"
+        class="icon nav-icon icon-star"
       ></span>
       <span
         v-scroll-to="{ el: '#nav-contact', offset: -50 }"
-        class="icon nav-icon icon-users"
+        class="icon nav-icon icon-bubbles"
       ></span>
     </nav>
     <nav v-if="isLegacy">
