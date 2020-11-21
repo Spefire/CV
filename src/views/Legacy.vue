@@ -2,6 +2,7 @@
   <div>
     <Header v-bind:isLegacy="true" />
     <div id="nav-legacy" class="legacy-page">
+      <div class="legacy-background"></div>
       <h2 class="section-title inverted">Mentions Légales</h2>
       <p class="bloc" v-html="mentions"></p>
       <router-link class="link-button" to="/">

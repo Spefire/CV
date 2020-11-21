@@ -50,7 +50,7 @@
       class="nav-page-button inverted"
       v-scroll-to="{ el: '#nav-home', offset: 0 }"
     >
-      <span class="icon home-icon icon-circle-down"></span>
+      <span class="icon home-icon icon-circle-down inverted"></span>
     </div>
     <Footer />
   </div>
