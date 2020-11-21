@@ -157,6 +157,25 @@
   }
 }
 
+.tools {
+  display: flex;
+  flex-direction: row;
+
+  .tool {
+    width: fit-content;
+    margin: 0 10px 0 0;
+    padding: 5px 10px 5px 10px;
+    color: $white-color;
+    border-radius: 5px;
+    background: $secondary-color;
+
+    &:nth-child(2n) {
+      background-color: $primary-color;
+    }
+  }
+}
+
+
 ///--------------------------------------------------------------------------------
 /// VIEWS
 ///--------------------------------------------------------------------------------
@@ -265,6 +284,12 @@
     @include mobile-only {
       justify-content: space-evenly;
     }
+  }
+}
+
+.education-section {
+  .tools {
+    margin-bottom: 15px;
   }
 }
 

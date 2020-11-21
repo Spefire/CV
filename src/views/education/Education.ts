@@ -18,6 +18,7 @@ export default class Education extends Vue {
       city: "Brest",
       description:
         "Développement d'outils d'enregistrement dans le domaine de la Réalité Virtuelle, sous le moteur de jeu Unity en C#, pour mesurer l'expérience utilisateur.",
+      tools: ["Unity", "C#"]
     },
     {
       name: "Stage : Développeur Front-End",
@@ -26,6 +27,7 @@ export default class Education extends Vue {
       city: "Rennes",
       description:
         "Développement des outils de visualisation web en AngularJS, pour aider à mieux comprendre et rendre agréable l'utilisation des données urbaines.",
+      tools: ["AngularJS", "HTML/CSS"]
     },
     {
       name: "Baccalauréat Scientifique",

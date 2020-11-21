@@ -8,6 +8,15 @@
         <h2>{{ exp.name }}</h2>
         <h3>{{ exp.place }} • {{ exp.city }} • {{ exp.date }}</h3>
         <p v-html="exp.description"></p>
+        <div v-if="exp.tools" class="tools">
+          <h3
+            v-for="(tool, indexTool) in exp.tools"
+            :key="indexTool"
+            class="tool"
+          >
+            {{ tool }}
+          </h3>
+        </div>
       </div>
     </div>
   </div>
