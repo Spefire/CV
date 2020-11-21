@@ -151,6 +151,15 @@
     margin-bottom: 15px;
   }
 
+  &.without-padding {
+    padding: 0 0 15px 0;
+    
+    &:not(:last-child) {
+      border-radius: 0;
+      border-bottom: 2px solid $black-color;
+    }
+  }
+
   @include mobile-only {
     text-align: center;
     flex-direction: column;
@@ -160,6 +169,10 @@
 .tools {
   display: flex;
   flex-direction: row;
+
+  @include mobile-only {
+    justify-content: center;
+  }
 
   .tool {
     width: fit-content;
@@ -288,12 +301,6 @@
     @include mobile-only {
       justify-content: space-evenly;
     }
-  }
-}
-
-.education-section {
-  .tools {
-    margin-bottom: 15px;
   }
 }
 

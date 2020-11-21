@@ -4,7 +4,11 @@
       <h2 class="section-title">Formations</h2>
     </div>
     <div class="section-right-layout">
-      <div v-for="(educ, index) in educList" :key="index">
+      <div
+        v-for="(educ, index) in educList"
+        :key="index"
+        class="bloc without-padding"
+      >
         <h2>{{ educ.name }}</h2>
         <h3>{{ educ.place }} • {{ educ.city }} • {{ educ.date }}</h3>
         <p v-html="educ.description"></p>
