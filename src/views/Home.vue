@@ -2,6 +2,7 @@
   <div>
     <Header />
     <div id="nav-home" class="home-page">
+      <div class="home-background"></div>
       <h1>{{ name }}</h1>
       <vue-typed-js
         :strings="profile"
