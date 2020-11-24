@@ -36,7 +36,10 @@
         </a>
       </div>
     </div>
-    <div class="nav-page-button" v-scroll-to="{ el: '#nav-about', offset: 0 }">
+    <div
+      class="nav-page-button"
+      v-scroll-to="{ el: '#nav-about', offset: -50 }"
+    >
       <span class="icon home-icon icon-circle-down"></span>
     </div>
     <About />

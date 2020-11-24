@@ -29,7 +29,7 @@ export default class Header extends Vue {
 
     // homeTotalHeight
     if (home) {
-      this.homeTotalHeight = home.offsetHeight;
+      this.homeTotalHeight = home.offsetHeight - 51;
     }
     // aboutTotalHeight
     if (about) {

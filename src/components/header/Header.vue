@@ -12,7 +12,7 @@
       </div>
       <div class="nav-separator"></div>
       <div
-        v-scroll-to="{ el: '#nav-about', offset: 0 }"
+        v-scroll-to="{ el: '#nav-about', offset: -50 }"
         v-bind:class="{ active: currentLocation == 'nav-about' }"
       >
         Présentation
