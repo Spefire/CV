@@ -7,9 +7,23 @@
       <div class="contact-links wrap-container">
         <div>
           <h3 class="contact-title">Adresse postale</h3>
-          <p class="bloc" v-html="contactAdress"></p>
+          <p
+            v-if="!showAdress"
+            @click="displayAdress"
+            class="bloc contact-sensible"
+          >
+            Cliquez ici pour l'afficher
+          </p>
+          <p v-else class="bloc" v-html="contactAdress"></p>
           <h3 class="contact-title">Téléphone</h3>
-          <p class="bloc">{{ contactPhone }}</p>
+          <p
+            v-if="!showPhone"
+            @click="displayPhone"
+            class="bloc contact-sensible"
+          >
+            Cliquez ici pour l'afficher
+          </p>
+          <p v-else class="bloc">{{ contactPhone }}</p>
         </div>
         <div>
           <h3 class="contact-title">Courriel principal</h3>
