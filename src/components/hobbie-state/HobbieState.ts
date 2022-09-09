@@ -1,7 +1,21 @@
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { defineComponent } from "vue";
 
-@Component
-export default class HobbieState extends Vue {
-  @Prop() name!: string;
-  @Prop() icon!: string;
-}
+export default defineComponent({
+  name: "HobbieState",
+  components: {},
+  props: {
+    name: {
+      type: String,
+      required: false,
+      default: ""
+    },
+    icon: {
+      type: String,
+      required: false,
+      default: ""
+    },
+  },
+  setup: () => {
+    return {};
+  },
+});

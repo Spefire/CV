@@ -1,6 +1,16 @@
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { defineComponent } from "vue";
 
-@Component
-export default class Footer extends Vue {
-  @Prop() isLegacy!: boolean;
-}
+export default defineComponent({
+  name: "Footer",
+  components: {},
+  props: {
+    isLegacy: {
+      type: Boolean,
+      required: false,
+      default: false
+    },
+  },
+  setup: () => {
+    return {};
+  },
+});

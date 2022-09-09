@@ -1,20 +1,36 @@
-import { Component, Vue } from "vue-property-decorator";
+import { defineComponent, ref } from "vue";
 
-@Component
-export default class Contact extends Vue {
-  contactAdress = "Appartement A202<br/>4 Rue de la Sirène<br/>44300 Nantes";
-  contactMail = "nicholasbrun.pro@gmail.com";
-  contactMailIllus = "spefire@gmail.com";
-  contactPhone = "+33 (0)6 66 21 86 44";
+export default defineComponent({
+  name: "Contact",
+  components: {},
+  setup: () => {
+    const fixNavbar = ref(false);
+    const contactAdress = ref("Appartement A202<br/>4 Rue de la Sirène<br/>44300 Nantes");
+    const contactMail = ref("nicholasbrun.pro@gmail.com");
+    const contactMailIllus = ref("spefire@gmail.com");
+    const contactPhone = ref("+33 (0)6 66 21 86 44");
+  
+    const showAdress = ref(false);
+    const showPhone = ref(false);
 
-  showAdress = false;
-  showPhone = false;
+    return {
+      fixNavbar,
+      contactAdress,
+      contactMail,
+      contactMailIllus,
+      contactPhone,
+      showAdress,
+      showPhone,
+    };
+  },
 
-  displayAdress() {
-    this.showAdress = true;
+  methods: {
+    displayAdress() {
+      this.showAdress = true;
+    },
+
+    displayPhone() {
+      this.showPhone = true;
+    }
   }
-
-  displayPhone() {
-    this.showPhone = true;
-  }
-}
+});
