@@ -1,10 +1,6 @@
-declare module "*.vue" {
-  import Vue from "vue";
-  export default Vue;
+/* eslint-disable */
+declare module '*.vue' {
+  import type { DefineComponent } from 'vue'
+  const component: DefineComponent<{}, {}, any>
+  export default component
 }
-declare module "vue-typed-js";
-
-declare module "*.png";
-declare module "*.jpeg";
-declare module "*.jpg";
-declare module "*.svg";
