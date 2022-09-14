@@ -29,6 +29,7 @@ module.exports = {
     'vue/multiline-html-element-content-newline': 'off',
     "vue/no-multi-spaces": ["error", {
       "ignoreProperties": false
-    }]
+    }],
+    'vue/multi-word-component-names': 'off'
   }
 }

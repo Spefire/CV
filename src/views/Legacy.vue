@@ -1,15 +1,21 @@
 <template>
   <div>
-    <Header v-bind:isLegacy="true" />
-    <div id="nav-legacy" class="legacy-page">
-      <div class="legacy-background"></div>
+    <Header :is-legacy="true" />
+    <div
+      id="nav-legacy"
+      class="legacy-page">
+      <div class="legacy-background" />
       <h2 class="section-title inverted">Mentions Légales</h2>
-      <p class="bloc" v-html="mentions"></p>
-      <router-link class="link-button" to="/">
-        <span class="icon button-icon icon-home"></span>Retourner à l'accueil
+      <p
+        class="bloc"
+        v-html="mentions" />
+      <router-link
+        class="link-button"
+        to="/">
+        <span class="icon button-icon icon-home" />Retourner à l'accueil
       </router-link>
     </div>
-    <Footer v-bind:isLegacy="true" />
+    <Footer :is-legacy="true" />
   </div>
 </template>
 

@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/Footer.vue";
 import Header from "@/components/header/Header.vue";
-
 import About from "@/views/about/About.vue";
 import Contact from "@/views/contact/Contact.vue";
 import Education from "@/views/education/Education.vue";
@@ -30,6 +29,7 @@ export default {
         "Je suis <b>Artiste illustrateur</b>.",
         "Je suis <b>Amateur de Réalités virtuelle et augmentée</b>.",
       ],
+      txtProfile: "Ingénieur en développement Front-End<br>et artiste illustrateur.",
       description:
         "Ma passion : <b>créer, donner vie à des idées</b>.<br/>Faisons défiler ensemble la page pour en savoir plus...",
     };

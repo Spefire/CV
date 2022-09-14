@@ -7,8 +7,7 @@
     <div class="progress-bar-externe">
       <div
         class="progress-bar-interne"
-        :style="{ width: initLevel * 20 + '%' }"
-      >
+        :style="{ width: initLevel * 20 + '%' }">
         <!--label>{{ initLevel + "%" }}</label-->
       </div>
     </div>

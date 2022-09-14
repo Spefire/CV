@@ -1,5 +1,7 @@
 <template>
-  <div id="nav-skills" class="section skills-section">
+  <div
+    id="nav-skills"
+    class="section skills-section">
     <div class="section-left-layout">
       <h2 class="section-title">Compétences</h2>
     </div>
@@ -7,16 +9,14 @@
       <div class="wrap-container">
         <ProgressBar
           v-for="(skill, index) in skillList"
-          v-bind:key="'skillList' + index"
-          v-bind:name="skill.name"
-          v-bind:value="skill.value"
-        />
+          :key="'skillList' + index"
+          :name="skill.name"
+          :value="skill.value" />
       </div>
       <ul class="wrap-container">
         <li
           v-for="(otherSkill, index) in otherSkillList"
-          v-bind:key="'otherSkillList' + index"
-        >
+          :key="'otherSkillList' + index">
           {{ otherSkill }}
         </li>
       </ul>

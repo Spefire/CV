@@ -1,46 +1,52 @@
 <template>
   <div>
     <Header />
-    <div id="nav-home" class="home-page">
-      <div class="home-background"></div>
+    <div
+      id="nav-home"
+      class="home-page">
+      <div class="home-background" />
       <h1>{{ name }}</h1>
-      <vue-typed-js
+      <p v-html="txtProfile" />
+      <!--vue-typed-js
         :strings="profile"
-        :contentType="'html'"
-        :typeSpeed="35"
-        :backSpeed="15"
-        :backDelay="2000"
-        :loop="true"
-      >
-        <p class="typing"></p>
-      </vue-typed-js>
-      <p v-html="description"></p>
+        :content-type="'html'"
+        :type-speed="35"
+        :back-speed="15"
+        :back-delay="2000"
+        :loop="true">
+        <p class="typing" />
+      </vue-typed-js-->
+      <p v-html="description" />
       <div class="home-links">
-        <a href="https://www.facebook.com/spefire/" target="_blank">
-          <span class="icon home-icon icon-facebook"></span>
+        <a
+          href="https://www.facebook.com/spefire/"
+          target="_blank">
+          <span class="icon home-icon icon-facebook" />
         </a>
-        <a href="https://twitter.com/Spefire" target="_blank">
-          <span class="icon home-icon icon-twitter"></span>
+        <a
+          href="https://twitter.com/Spefire"
+          target="_blank">
+          <span class="icon home-icon icon-twitter" />
         </a>
-        <a href="https://instagram.com/spefireflies/" target="_blank">
-          <span class="icon home-icon icon-instagram"></span>
+        <a
+          href="https://instagram.com/spefireflies/"
+          target="_blank">
+          <span class="icon home-icon icon-instagram" />
         </a>
-        <a href="https://github.com/Spefire" target="_blank">
-          <span class="icon home-icon icon-github"></span>
+        <a
+          href="https://github.com/Spefire"
+          target="_blank">
+          <span class="icon home-icon icon-github" />
         </a>
         <a
           href="https://www.linkedin.com/in/nicholas-brun-1689a879/"
-          target="_blank"
-        >
-          <span class="icon home-icon icon-linkedin"></span>
+          target="_blank">
+          <span class="icon home-icon icon-linkedin" />
         </a>
       </div>
     </div>
-    <div
-      class="nav-page-button"
-      v-scroll-to="{ el: '#nav-about', offset: -50 }"
-    >
-      <span class="icon home-icon icon-circle-down"></span>
+    <div class="nav-page-button">
+      <span class="icon home-icon icon-circle-down" />
     </div>
     <About />
     <Education />
@@ -49,11 +55,8 @@
     <Languages />
     <Hobbies />
     <Contact />
-    <div
-      class="nav-page-button inverted"
-      v-scroll-to="{ el: '#nav-home', offset: 0 }"
-    >
-      <span class="icon home-icon icon-circle-down inverted"></span>
+    <div class="nav-page-button inverted">
+      <span class="icon home-icon icon-circle-down inverted" />
     </div>
     <Footer />
   </div>

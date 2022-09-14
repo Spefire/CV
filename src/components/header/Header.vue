@@ -1,72 +1,38 @@
 <template>
   <header
-    v-bind:class="{ 'with-background': fixNavbar }"
-    v-bind:style="{ opacity: fixNavbar ? '1.0' : opacNavbar }"
-  >
+    :class="{ 'with-background': fixNavbar }"
+    :style="{ opacity: fixNavbar ? '1.0' : opacNavbar }">
     <nav v-if="!isLegacy">
-      <div
-        v-scroll-to="{ el: '#nav-home', offset: 0 }"
-        v-bind:class="{ active: currentLocation === 'nav-home' }"
-      >
+      <div :class="{ active: currentLocation === 'nav-home' }">
         Accueil
       </div>
-      <div class="nav-separator"></div>
-      <div
-        v-scroll-to="{ el: '#nav-about', offset: -50 }"
-        v-bind:class="{ active: currentLocation == 'nav-about' }"
-      >
+      <div class="nav-separator" />
+      <div :class="{ active: currentLocation == 'nav-about' }">
         Présentation
       </div>
-      <div
-        v-scroll-to="{ el: '#nav-education', offset: -50 }"
-        v-bind:class="{ active: currentLocation == 'nav-education' }"
-      >
+      <div :class="{ active: currentLocation == 'nav-education' }">
         Formations
       </div>
-      <div
-        v-scroll-to="{ el: '#nav-experiences', offset: -50 }"
-        v-bind:class="{ active: currentLocation == 'nav-experiences' }"
-      >
+      <div :class="{ active: currentLocation == 'nav-experiences' }">
         Expériences
       </div>
-      <div
-        v-scroll-to="{ el: '#nav-skills', offset: -50 }"
-        v-bind:class="{ active: currentLocation == 'nav-skills' }"
-      >
+      <div :class="{ active: currentLocation == 'nav-skills' }">
         Compétences
       </div>
-      <div class="nav-separator"></div>
-      <div
-        v-scroll-to="{ el: '#nav-contact', offset: -50 }"
-        v-bind:class="{ active: currentLocation == 'nav-contact' }"
-      >
+      <div class="nav-separator" />
+      <div :class="{ active: currentLocation == 'nav-contact' }">
         Contact
       </div>
-      <span
-        v-scroll-to="{ el: '#nav-home', offset: 0 }"
-        class="icon nav-icon icon-home"
-      ></span>
-      <span
-        v-scroll-to="{ el: '#nav-education', offset: -50 }"
-        class="icon nav-icon icon-briefcase"
-      ></span>
-      <span
-        v-scroll-to="{ el: '#nav-skills', offset: -50 }"
-        class="icon nav-icon icon-stats-bars"
-      ></span>
-      <span
-        v-scroll-to="{ el: '#nav-hobbies', offset: -50 }"
-        class="icon nav-icon icon-star"
-      ></span>
-      <span
-        v-scroll-to="{ el: '#nav-contact', offset: -50 }"
-        class="icon nav-icon icon-bubbles"
-      ></span>
+      <span class="icon nav-icon icon-home" />
+      <span class="icon nav-icon icon-briefcase" />
+      <span class="icon nav-icon icon-stats-bars" />
+      <span class="icon nav-icon icon-star" />
+      <span class="icon nav-icon icon-bubbles" />
     </nav>
     <nav v-if="isLegacy">
       <router-link to="/">
         <div>Accueil</div>
-        <span class="icon nav-icon icon-home"></span>
+        <span class="icon nav-icon icon-home" />
       </router-link>
     </nav>
   </header>

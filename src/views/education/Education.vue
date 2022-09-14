@@ -1,5 +1,7 @@
 <template>
-  <div id="nav-education" class="section education-section">
+  <div
+    id="nav-education"
+    class="section education-section">
     <div class="section-left-layout">
       <h2 class="section-title">Formations</h2>
     </div>
@@ -7,17 +9,17 @@
       <div
         v-for="(educ, index) in educList"
         :key="index"
-        class="bloc without-padding"
-      >
+        class="bloc without-padding">
         <h2>{{ educ.name }}</h2>
         <h3>{{ educ.place }} • {{ educ.city }} • {{ educ.date }}</h3>
-        <p v-html="educ.description"></p>
-        <div v-if="educ.tools" class="tools">
+        <p v-html="educ.description" />
+        <div
+          v-if="educ.tools"
+          class="tools">
           <h3
             v-for="(tool, indexTool) in educ.tools"
             :key="indexTool"
-            class="tool"
-          >
+            class="tool">
             {{ tool }}
           </h3>
         </div>

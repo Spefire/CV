@@ -1,5 +1,4 @@
 import ProgressBar from "@/components/progress-bar/ProgressBar.vue";
-
 import { defineComponent, ref } from "vue";
 
 export default defineComponent({
@@ -64,6 +63,6 @@ export default defineComponent({
     return {
       skillList,
       otherSkillList
-      };
+    };
   },
 });

@@ -47,7 +47,7 @@ export default defineComponent({
     window.addEventListener("scroll", this.handleScroll);
   },
 
-  destroyed() {
+  unmounted() {
     window.removeEventListener("resize", this.handleSize);
     window.removeEventListener("scroll", this.handleScroll);
   },
